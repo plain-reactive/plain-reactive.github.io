@@ -53,9 +53,12 @@
 
     text-wrap: nowrap;
 
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: var(--text-primary-color);
     letter-spacing: 1px;
+
+    /* Blurry text fix */
+    font-smooth: never;
 
     border-radius: 100pt;
 
