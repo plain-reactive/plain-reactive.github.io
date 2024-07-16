@@ -13,7 +13,7 @@ class pApp extends PlainComponent {
         return `
             ${this.router.route({
                 '':         '<home-page></home-page>',
-                '*':        '<home-page></home-page>',
+                '*':        '<h1>404</h1>',
             })}
         `
     }
