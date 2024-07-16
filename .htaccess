@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ https://plain-reactive.site/ [R=301,L]
