@@ -8,7 +8,7 @@ class App extends PlainComponent {
     constructor() {
         super('app-root', 'src/App.css')
 
-        this.router = new PlainRouter('https://plain-reactive.site/') // Production
+        // this.router = new PlainRouter('https://plain-reactive.site/') // Production
         // this.router = new PlainRouter('http://localhost/plain-reactive.github.io/') // Development
     }
 
