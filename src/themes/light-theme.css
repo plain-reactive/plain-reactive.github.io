@@ -1,13 +1,13 @@
 .light-theme {
-    --primary-color: lightblue;
+    --primary-color: rgb(255, 255, 255);
 
     /* BUTTONS */
-    --button-color: #AFF8C8;
-    --button-hover-color: #00D37F;
+    --button-color: #ffffff;
+    --button-hover-color: #ffffff;
     --buton-active-color: #f0c024;
 
     /* TEXT */
-    --text-primary-color: #04232e;
-    --text-secondary-color: #F8FBFF;
+    --text-primary-color: #183844;
+    --text-secondary-color: #aec0c7;
     --text-accent-color: #5625e9;
 }

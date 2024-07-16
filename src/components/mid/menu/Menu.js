@@ -33,6 +33,7 @@ class Menu extends PlainComponent {
             item.onclick = () => {
                 items.forEach(item => item.deselect())
                 item.select()
+                item.navigateTo()
             }
         })
     }

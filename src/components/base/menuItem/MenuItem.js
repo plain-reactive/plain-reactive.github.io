@@ -12,10 +12,6 @@ class MenuItem extends PlainComponent {
         `
     }
 
-    listeners() {
-        this.onclick = () => this.navigateTo()
-    }
-
     navigateTo() {
         window.location.href = this.getAttribute('href') ? this.getAttribute('href') : '#'
     }
