@@ -1,4 +1,4 @@
-import { PlainComponent, PlainRouter } from '../vendor/plain-reactive/src/index.js'
+import { PlainComponent } from '../vendor/plain-reactive/src/index.js'
 import HomePage from './pages/home/HomePage.js'
 import PlaygroundPage from './pages/playground/PlaygroundPage.js'
 import NotFoundPage from './pages/404/404Page.js'
@@ -14,11 +14,7 @@ class App extends PlainComponent {
 
     template() {
         return `
-            ${this.router.route({
-                '':                 '<home-page></home-page>',
-                'playground':       '<playground-page></playground-page>',
-                '*':                '<not-found-page></not-found-page>',
-            })}
+            <home-page></home-page>
         `
     }
 }
