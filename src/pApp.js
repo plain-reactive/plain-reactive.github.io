@@ -1,13 +1,20 @@
-import { PlainComponent } from '../vendor/plain-reactive/src/index.js'
+import { PlainComponent, PlainRouter } from '../vendor/plain-reactive/src/index.js'
+import homePage from './pages/home/homePage.js'
+
 
 class pApp extends PlainComponent {
     constructor() {
         super('p-app', 'src/pApp.css')
+
+        this.router = new PlainRouter('https://plain-reactive.site/')
     }
 
     template() {
         return `
-            <h1>App</h1>
+            ${this.router.route({
+                '':         '<home-page></home-page>',
+                '*':        '<home-page></home-page>',
+            })}
         `
     }
 }
