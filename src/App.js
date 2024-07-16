@@ -1,7 +1,7 @@
 import { PlainComponent, PlainRouter } from '../vendor/plain-reactive/src/index.js'
-import HomePage from 'src/pages/home/HomePage.js'
-import PlaygroundPage from 'src/pages/playground/PlaygroundPage.js'
-import NotFoundPage from 'src/pages/404/404Page.js'
+import HomePage from './src/pages/home/HomePage.js'
+import PlaygroundPage from './src/pages/playground/PlaygroundPage.js'
+import NotFoundPage from './src/pages/404/404Page.js'
 
 
 class App extends PlainComponent {
