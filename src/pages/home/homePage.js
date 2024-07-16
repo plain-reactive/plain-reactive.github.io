@@ -1,8 +1,8 @@
 import { PlainComponent } from '../../../vendor/plain-reactive/src/index.js'
 
-class homePage extends PlainComponent {
+class HomePage extends PlainComponent {
     constructor() {
-        super('home-page', './src/pages/home/homePage.css')
+        super('home-page', 'src/pages/home/HomePage.css')
     }
 
     template() {
@@ -15,4 +15,4 @@ class homePage extends PlainComponent {
     }
 }
 
-export default customElements.define('home-page', homePage)
+export default customElements.define('home-page', HomePage)
