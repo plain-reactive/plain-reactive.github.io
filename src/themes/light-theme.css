@@ -1,3 +1,13 @@
 .light-theme {
     --primary-color: lightblue;
+
+    /* BUTTONS */
+    --button-color: #AFF8C8;
+    --button-hover-color: #00D37F;
+    --buton-active-color: #f0c024;
+
+    /* TEXT */
+    --text-primary-color: #04232e;
+    --text-secondary-color: #F8FBFF;
+    --text-accent-color: #5625e9;
 }

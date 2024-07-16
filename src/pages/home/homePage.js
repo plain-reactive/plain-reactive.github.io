@@ -1,4 +1,5 @@
 import { PlainComponent } from '../../../vendor/plain-reactive/src/index.js'
+import Menu from '../../components/mid/menu/Menu.js'
 
 class HomePage extends PlainComponent {
     constructor() {
@@ -7,10 +8,7 @@ class HomePage extends PlainComponent {
 
     template() {
         return `
-            <div class="home-page">
-                <h1>Home Page</h1>
-                <p>This is the home page.</p>
-            </div>
+            <p-menu></p-menu>
         `
     }
 }
