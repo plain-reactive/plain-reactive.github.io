@@ -2,7 +2,7 @@ import { PlainComponent } from '../../../../vendor/plain-reactive/src/index.js'
 
 class MenuItem extends PlainComponent {
     constructor() {
-        super('p-menu-item', './src/components/base/menuItem/menuItem.css')
+        super('p-menu-item', './src/components/base/menuItem/MenuItem.css')
     }
 
     template() {

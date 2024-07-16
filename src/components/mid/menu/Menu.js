@@ -3,7 +3,7 @@ import MenuItem from '../../base/menuItem/MenuItem.js'
 
 class Menu extends PlainComponent {
     constructor() {
-        super('p-menu', './src/components/mid/menu/menu.css')
+        super('p-menu', './src/components/mid/menu/Menu.css')
 
         this.selected = new PlainState(null, this)
     }
