@@ -1,1 +1,47 @@
+.hp-menu-bar {
+    height: 100vh;
+    width: 100px;
+}
 
+.movable {
+    padding-block: 1em;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    transform: translateX(-110%);
+
+    transition: 500ms;
+}
+
+.hp-menu-bar:hover .movable {
+    transform: translateX(0%);
+}
+
+.fade {
+    height: 100px;
+    width: 100px;
+
+    opacity: 0;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    background-image: linear-gradient(to top, white, rgba(255,255,255,0));
+
+    transition: 500ms;
+}
+
+.hp-menu-bar:hover .fade {
+    opacity: 1;
+}
+
+.start {
+    opacity: 1;
+    transform: translateX(0%);
+}

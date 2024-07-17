@@ -44,7 +44,7 @@
     padding: 0.75em;
     padding-inline: 1.5em;
 
-    width: calc(fit-content + 1em);
+    max-width: calc(fit-content + 1em);
 
     display: grid;
     place-content: center;
@@ -64,6 +64,13 @@
     border-radius: 2.5pt;
 
     transition: 300ms;
+}
+
+@media only screen and (max-width: 600px) {
+    .pmi-text {
+        min-width: 120px;
+        text-wrap: wrap;
+    }
 }
 
 /* HOVER & ACTIVE & SELECTED */

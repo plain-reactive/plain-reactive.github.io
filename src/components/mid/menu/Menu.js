@@ -18,7 +18,7 @@ class Menu extends PlainComponent {
             <p-menu-item class="item" number="06">Using contexts with PlainContext</p-menu-item>
             <p-menu-item class="item" number="07">Using router with PlainRouter</p-menu-item>
             <p-menu-item class="item" number="08">Dynamic rendering</p-menu-item>
-            <p-menu-item class="item" number="09">Rendering optimization and propagation</p-menu-item>
+            <p-menu-item class="item" number="09">Rendering optimization</p-menu-item>
             <p-menu-item class="item" number="10">Lifting state up and props</p-menu-item>
             <p-menu-item class="item" number="11">Good practices</p-menu-item>
             <p-menu-item class="item" number="12">Example project</p-menu-item>
