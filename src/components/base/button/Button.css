@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+.p-button-wrapper {
+    height: 50px;
+    width: fit-content;
+}
+
+.b-btn {
+    cursor: pointer;
+    
+    height: 100%;
+    aspect-ratio: 1;
+
+    appearance: none;
+
+    display: grid;
+    place-content: center;
+
+    border: none;
+    border-radius: 2.5pt;
+
+    background-color: white;
+
+    transition: 300ms;
+
+    color: var(--text-primary-color);
+}
+
+.b-btn:hover {
+    z-index: 15;
+
+    transform: scale(1.1);
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* STATES */
+.disabled {
+    pointer-events: none;
+
+    color: var(--tertiary-color);
+
+    background-color: var(--secondary-color);
+}
+
+.active {
+    color: var(--text-accent-color);
+}
+
+/* ANIMATION */
+.clicked {
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: clicked;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes clicked {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}

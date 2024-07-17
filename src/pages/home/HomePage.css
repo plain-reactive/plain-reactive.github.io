@@ -1,5 +1,39 @@
-.hp-menu-bar {
+/* WRAPPER */
+.home-page-wrapper {
     height: 100vh;
+}
+
+/* HEADER */
+.hp-header {
+    padding-inline: 2em;
+    box-sizing: border-box;
+
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+p-search-bar {
+    flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .hp-header {
+        padding-inline: 1em;
+        gap: 0.5em;
+        /* border-bottom: none; */
+    }
+}
+
+/* MENU BAR */
+.hp-menu-bar {
+    height: 100%;
     width: 100px;
 }
 

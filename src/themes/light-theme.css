@@ -1,5 +1,7 @@
 .light-theme {
-    --primary-color: rgb(255, 255, 255);
+    --primary-color: white;
+    --secondary-color: #f6f8fa;
+    --tertiary-color: #d0d7de;
 
     /* BUTTONS */
     --button-color: #ffffff;
