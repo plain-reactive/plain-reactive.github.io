@@ -64,3 +64,12 @@
     50% {transform: scale(1.05);}
     100% {transform: scale(1);}
 }
+
+/* MOBILE ADAPTATION */
+@media only screen and (max-width: 600px) {
+    .b-btn:hover {
+        /* Reset all hover styles */
+        transform: scale(1);
+        box-shadow: none;
+    }
+}

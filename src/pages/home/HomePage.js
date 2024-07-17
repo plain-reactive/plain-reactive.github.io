@@ -12,9 +12,12 @@ class HomePage extends PlainComponent {
     template() {
         return `
             <header class="hp-header">
-                <p-button type="primary" icon="home" active></p-button>
-                <p-button type="primary" icon="play_arrow"></p-button>
+                <h3 class="hp-header-logo">Plain</h3>
                 <p-search-bar></p-search-bar>
+                <div class="hp-header-buttons">
+                    <p-button type="primary" icon="home" active></p-button>
+                    <p-button type="primary" icon="play_arrow"></p-button>
+                </div>
                 <p-button type="primary" icon="light_mode" disabled></p-button>
                 <!-- Aquí tendríamos el switch de temas -->
             </header>

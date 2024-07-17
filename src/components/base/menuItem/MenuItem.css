@@ -88,8 +88,12 @@
     z-index: 20;
 }
 
-.p-menu-item-wrapper:hover .pmi-number, .selected .pmi-number {
+.p-menu-item-wrapper:not(.selected):hover .pmi-number {
     color: var(--text-primary-color);
+}
+
+.selected .pmi-number {
+    color: var(--text-accent-color);
 }
 
 .p-menu-item-wrapper:hover .pmi-text {

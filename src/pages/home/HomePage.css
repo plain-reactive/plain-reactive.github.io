@@ -5,6 +5,11 @@
 
 /* HEADER */
 .hp-header {
+    z-index: 10000;
+
+    position: sticky;
+    top: 0;
+
     padding-inline: 2em;
     box-sizing: border-box;
 
@@ -17,10 +22,25 @@
     gap: 1em;
 
     border-bottom: 2px solid var(--tertiary-color);
+
+    background-color: white;
+}
+
+.hp-header-logo {
+    font-size: 1.5em;
+    color: var(--text-accent-color);
 }
 
 p-search-bar {
     flex: 1;
+}
+
+.hp-header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 1em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -28,6 +48,14 @@ p-search-bar {
         padding-inline: 1em;
         gap: 0.5em;
         /* border-bottom: none; */
+    }
+
+    .hp-header-logo {
+        display: none;
+    }
+
+    .hp-header-buttons {
+        gap: 0.5em;
     }
 }
 
