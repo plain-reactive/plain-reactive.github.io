@@ -2,6 +2,7 @@ import { PlainComponent } from '../../../vendor/plain-reactive/src/index.js'
 import Menu from '../../components/mid/menu/Menu.js'
 import SearchBar from '../../components/base/searchBar/SearchBar.js'
 import Button from '../../components/base/button/Button.js'
+import CodeSnippet from '../../components/base/codeSnippet/codeSnippet.js'
 
 class HomePage extends PlainComponent {
     constructor() {
