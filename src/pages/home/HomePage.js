@@ -11,6 +11,14 @@ class HomePage extends PlainComponent {
     }
 
     template() {
+        const navBar = `
+            <nav class="hp-menu-bar">
+                <div class="movable start">
+                    <p-menu></p-menu>
+                </div>
+                <div class="fade start"></div>
+            </nav>
+        `
         return `
             <header class="hp-header">
                 <h3 class="hp-header-logo">Plain</h3>
@@ -22,21 +30,25 @@ class HomePage extends PlainComponent {
                 <p-button type="primary" icon="light_mode" disabled></p-button>
                 <!-- Aquí tendríamos el switch de temas -->
             </header>
-            
-            <nav class="hp-menu-bar">
-                <div class="movable start">
-                    <p-menu></p-menu>
-                </div>
-                <div class="fade start"></div>
-            </nav>
+
+            <div class="hp-body">
+                <p-code-snippet>
+                    async hideMenu() {
+                        setTimeout(() => {
+                            this.$('.movable').classList.remove('start')
+                            this.$('.fade').classList.remove('start')
+                        }, 1500)
+                    }
+                </p-code-snippet>
+            </div>
         `
     }
 
     async hideMenu() {
-        setTimeout(() => {
+        /* setTimeout(() => {
             this.$('.movable').classList.remove('start')
             this.$('.fade').classList.remove('start')
-        }, 1500)
+        }, 1500) */
     }
 }
 

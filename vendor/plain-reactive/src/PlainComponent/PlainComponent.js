@@ -25,7 +25,7 @@ export default class PlainComponent extends HTMLElement {
     #setWrapper() {
         const wrapper = document.createElement('div')
         wrapper.classList.add(`${this.name}-wrapper`)
-        wrapper.setAttribute('part', 'wrapper')
+        wrapper.setAttribute('plan', 'wrapper')
         return wrapper
     }
 
@@ -51,7 +51,17 @@ export default class PlainComponent extends HTMLElement {
         if (element) {
             return element
         } else {
-            throw new Error(`Theres no such element as '${selector}' in this component`)
+            return null
+        }
+    }
+
+    $$(selector) {
+        const collection = this.wrapper.querySelectorAll(selector) 
+        
+        if (collection) {
+            return collection
+        } else {
+            return null
         }
     }
 
