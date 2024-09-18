@@ -21,28 +21,32 @@ class CodeSnippet extends PlainComponent {
             return line
         })
 
-        return formattedContent
+        let coloredContent = formattedContent.join('\n')
+        coloredContent = coloredContent.replace(/&nbsp;/g, ' ')
+        coloredContent = hljs.highlight(this.getAttribute('lang'), coloredContent).value
+        coloredContent = coloredContent.split('\n')
+
+        return coloredContent
     }
 
     template() {
         return `
             <div class="code-snippet-header">
-                <span>index.js</span>
+                <span>${this.getAttribute('lang')}</span>
                 <span class="copy material-symbols-outlined">content_copy</span>
             </div>
-            <div class="code-snippet-body">
+            <pre class="code-snippet-body">
                 <code class="code">
                     ${this.formatContent().map( (line, index) => {
-                        const cleanLine = line.replace(/&nbsp;/g, ' ')
                         return `
                             <div class="line">
                                 <span class="line-number">${index + 1}</span>
-                                <code class="line-content">${hljs.highlight('javascript', cleanLine).value}</code>
+                                <code class="line-content">${line}</code>
                             </div>
                         `
                     }).join('')}
                 </code>
-            </div>
+            </pre>
         `
     }
 
