@@ -1,5 +1,5 @@
 import { PlainComponent } from '../../../../vendor/plain-reactive/src/index.js'
-import * as hlhs from '../../../../node_modules/highlightjs/highlight.pack.js'
+import * as hlhs from '../../../../vendor/highlightjs/highlight.pack.js'
 
 class CodeSnippet extends PlainComponent {
     constructor() {
